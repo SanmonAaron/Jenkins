@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('linter') {
             steps {
-                sh '.eslintrc.json'
+                sh '.elintrc.json'
             }
         }
         stage('test') {
