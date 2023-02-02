@@ -5,7 +5,7 @@ pipeline {
         
         stage('test') {
             steps {
-                sh 'npm run test'
+                sh 'sum.test.js'
             }
         }
     }
