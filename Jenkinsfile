@@ -4,7 +4,12 @@ pipeline {
     stages {
         stage('linter') {
             steps {
-                echo 'Hola mundo'
+                sh '.eslintrc.json'
+            }
+        }
+        stage('test') {
+            steps {
+                sh 'sum.test.js'
             }
         }
     }
